@@ -1,19 +1,19 @@
-class Posicion extends Propiedad {
+class Posicion extends Atributo {
   static String key = "Posicion";
   String getKey() {
     return key;
   }
-  Propiedad soloPonerNewX() {
+  Atributo soloPonerNewX() {
     return new Posicion();
   }
-  Propiedad[] soloPonerNewArray(int tam) {
+  Atributo[] soloPonerNewArray(int tam) {
     return new Posicion[tam];
   }
   //;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   //;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   float x,y;
   
-  Propiedad[] iniciar(Sistema s, Propiedad[] nuevas) {
+  Atributo[] iniciar(Sistema s, Atributo[] nuevas) {
     int grilla = s.p5.ceil(s.p5.sqrt(nuevas.length));
     int grillaX = grilla;
     int grillaY = grilla;
@@ -24,7 +24,7 @@ class Posicion extends Propiedad {
     }
     return nuevas;
   }
-  /*Propiedad[] iniciar(Sistema s, Propiedad[] nuevas) {
+  /*Atributo[] iniciar(Sistema s, Atributo[] nuevas) {
     for (Posicion p : (Posicion[])nuevas) {
       p.x = s.p5.random(s.p5.width);
       p.y = s.p5.random(s.p5.height);
