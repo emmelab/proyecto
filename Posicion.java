@@ -11,8 +11,12 @@ class Posicion extends Atributo {
   }
   //;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   //;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+<<<<<<< HEAD
   float x,y,z;
   float zaraza;
+=======
+  float x,y,CAMBIO;
+>>>>>>> parent of b848551... asd
   
   Atributo[] iniciar(Sistema s, Atributo[] nuevas) {
     int grilla = s.p5.ceil(s.p5.sqrt(nuevas.length));
