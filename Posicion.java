@@ -11,7 +11,7 @@ class Posicion extends Atributo {
   }
   //;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   //;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  float x,y,CAMBIO;
+  float x,y;
   float zarazas;
   
   Atributo[] iniciar(Sistema s, Atributo[] nuevas) {
