@@ -32,4 +32,6 @@ class Posicion extends Propiedad {
     return nuevas;
   }*/
   
+    
+    /*EDICION PARA PRUEBA*/
 }
