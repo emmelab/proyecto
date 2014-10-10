@@ -15,7 +15,7 @@ class Posicion extends Atributo {
   float zaraza;
   float otrosmas;
   
-  Atributo[] iniciar(Sistema s, Atributo[] nuevas) {
+  Atributo[] holis(Sistema s, Atributo[] nuevas) {
     int grilla = s.p5.ceil(s.p5.sqrt(nuevas.length));
     int grillaX = grilla;
     int grillaY = grilla;
