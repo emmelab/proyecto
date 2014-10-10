@@ -17,7 +17,7 @@ class Posicion extends Atributo {
   
   Atributo[] holis(Sistema s, Atributo[] nuevas) {
     int grilla = s.p5.ceil(s.p5.sqrt(nuevas.length));
-    int grillaX = grilla;
+    int grillo = grilla;
     int grillaY = grilla;
     for (int i=0; i<nuevas.length; i++) {
       Posicion p = (Posicion)nuevas[i];
