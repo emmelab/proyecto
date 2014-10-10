@@ -13,7 +13,7 @@ class Posicion extends Propiedad {
   //;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   float x;
   
-  Propiedad[] iniciar(Sistema s, Propiedad[] nuevas) {
+  Propiedad[] holi(Sistema s, Propiedad[] nuevas) {
     int grilla = s.p5.ceil(s.p5.sqrt(nuevas.length));
     int grillaX = grilla;
     int grillaY = grilla;
