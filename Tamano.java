@@ -1,19 +1,19 @@
-class Tamano extends Propiedad {
+class Tamano extends Atributo {
   static String key = "Tamano";
   String getKey() {
     return key;
   }
-  Propiedad soloPonerNewX() {
+  Atributo soloPonerNewX() {
     return new Tamano();
   }
-  Propiedad[] soloPonerNewArray(int tam) {
+  Atributo[] soloPonerNewArray(int tam) {
     return new Tamano[tam];
   }
   //;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   //;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   float ancho,alto,diametro;
   
-  Propiedad[] iniciar(Sistema s, Propiedad[] nuevas) {
+  Atributo[] iniciar(Sistema s, Atributo[] nuevas) {
     for (Tamano p : (Tamano[])nuevas) {
       p.ancho = p.alto = p.diametro = s.p5.random(5,10)+s.p5.random(5,10);
     }

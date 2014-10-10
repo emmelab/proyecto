@@ -4,28 +4,28 @@ import java.util.HashMap;
 class Sistema {
   final PApplet p5;
   int tamano = 100;
-  HashMap<String,Propiedad[]> propiedades;
+  HashMap<String,Atributo[]> atributos;
   
   Sistema(PApplet p5, int cantidad) {
     this.p5 = p5;
     tamano = cantidad;
-    propiedades = new HashMap();
+    atributos = new HashMap();
   }
   
-  Propiedad[] incluir(Propiedad semilla) {
-    if (propiedades.containsKey( semilla.getKey() )) {
+  Atributo[] incluir(Atributo semilla) {
+    if (atributos.containsKey( semilla.getKey() )) {
       System.out.println("Esta llave ya está en uso"+semilla.getKey());
       p5.exit();
       return null;
     }
     else {
-      Propiedad[] nuevas = semilla.generarGrupo(this);
-      propiedades.put(semilla.getKey(),nuevas);
+      Atributo[] nuevas = semilla.generarGrupo(this);
+      atributos.put(semilla.getKey(),nuevas);
       return nuevas;
     }
   }
   
-  Propiedad[] getPropiedades(String llave) {
-    return propiedades.get(llave);
+  Atributo[] getAtributos(String llave) {
+    return atributos.get(llave);
   }
 }
